@@ -28,17 +28,6 @@ CREATE TABLE `user` (
   UNIQUE KEY `USERNAME` (`USERNAME`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
-/*Data for the table `user` */
-
-insert  into `user`(`ID`,`USERNAME`,`NAME`) values 
-(2,'johndoe','John Doe'),
-(4,'002','John Doe'),
-(5,'003','zjl'),
-(6,'004','zjl'),
-(7,'005','zjl'),
-(8,'009','zjl'),
-(9,'010','zjl');
-
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
