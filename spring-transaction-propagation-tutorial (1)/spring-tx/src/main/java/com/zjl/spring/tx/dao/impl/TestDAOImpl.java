@@ -15,7 +15,10 @@ public class TestDAOImpl implements TestDAO {
 	
 	@Override
 	public void insertUser(User user) {
-		sessionFactory.openSession().save(user);
+		
+		sessionFactory.getCurrentSession().save(user);
+		// sessionFactory.openSession() 会使事务失效
+	   // 但是 getCurrentSession 外层方法不能没有事务........MMP
 	}
 
 }
